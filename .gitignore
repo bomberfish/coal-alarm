@@ -7,3 +7,4 @@ build/
 out/
 CMakeSettings.json
 webport/node_modules/
+.cache
