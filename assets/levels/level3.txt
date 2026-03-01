@@ -1,0 +1,30 @@
+# Level 3 — Zigzag corridor
+# Navigate a zigzag path with bouncers in each segment.
+
+# Border
+wall  50   50   900  25
+wall  50   925  900  25
+wall  50   75    25  850
+wall  925  75    25  850
+
+# Zigzag walls creating corridors (gaps of ~200px each)
+wall  275  75   25  500
+wall  500  425  25  500
+wall  725  75   25  500
+
+# Zones
+start   80  750  100  120
+end    820  750  100  120
+
+# Obstacles in each corridor segment
+obstacle  165  350  180  2.0  0.00  14  1
+obstacle  390  680  180  2.3  1.20  14  1
+obstacle  615  350  180  1.9  2.40  14  1
+obstacle  825  680  180  2.5  0.80  14  1
+
+# Coins in each zigzag leg
+coin  165  150  24
+coin  390  830  24
+coin  615  150  24
+coin  825  830  24
+coin  500  350  24

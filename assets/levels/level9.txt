@@ -1,0 +1,38 @@
+# Level 9 — Pinball
+# Large open space saturated with obstacles moving in both directions.
+
+# Border
+wall  50   50   900  25
+wall  50   925  900  25
+wall  50   75    25  850
+wall  925  75    25  850
+
+# Small inner pillars
+wall  350  380  30  70
+wall  625  560  30  70
+
+# Zones — diagonally opposite corners
+start   80  100  100  100
+end    820  800  100  100
+
+# Many obstacles — mix of horizontal and vertical
+obstacle  250  220  180  2.0  0.00  14  0
+obstacle  500  200  220  2.5  1.00  14  0
+obstacle  780  280  150  1.7  2.00  14  0
+obstacle  280  500  200  2.2  0.50  14  1
+obstacle  500  550  180  2.8  1.50  14  1
+obstacle  720  500  200  1.9  2.80  14  1
+obstacle  200  780  150  2.6  3.50  14  0
+obstacle  480  800  180  2.1  0.80  14  0
+obstacle  740  780  130  3.0  1.80  14  0
+obstacle  420  400  160  2.4  4.00  14  1
+
+# Coins spread across the danger zone
+coin  300  140  24
+coin  720  140  24
+coin  160  500  24
+coin  500  430  24
+coin  860  500  24
+coin  350  860  24
+coin  660  860  24
+coin  500  720  24

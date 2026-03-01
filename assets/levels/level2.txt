@@ -1,0 +1,24 @@
+# Level 2 — Open run
+# Wide open area with horizontal bouncers crossing the path.
+
+# Border
+wall  50   50   900  25
+wall  50   925  900  25
+wall  50   75    25  850
+wall  925  75    25  850
+
+# Zones
+start   80  420  100  130
+end    820  420  100  130
+
+# Horizontal obstacles sweeping across
+obstacle  500  220  320  1.5  0.00  16  0
+obstacle  500  420  320  2.0  1.00  16  0
+obstacle  500  620  320  1.8  2.00  16  0
+obstacle  500  820  320  2.2  3.00  16  0
+
+# Coins scattered through the crossing lanes
+coin  350  220  24
+coin  650  420  24
+coin  500  620  24
+coin  300  820  24

@@ -1,0 +1,44 @@
+# Level 8 — Maze
+# Multi-room maze with obstacles guarding each room.
+# Gaps are 150px wide for the 50px player.
+
+# Border
+wall  50   50   900  25
+wall  50   925  900  25
+wall  50   75    25  850
+wall  925  75    25  850
+
+# Vertical inner walls (25px wide)
+# Wall at x=300: gap at y=425-575
+wall  300  75   25  350
+wall  300  575  25  350
+
+# Wall at x=550: gap at y=525-675
+wall  550  75   25  450
+wall  550  675  25  250
+
+# Wall at x=750: gap at y=475-625
+wall  750  75   25  400
+wall  750  625  25  300
+
+# Zones
+start   80  100  100  100
+end    840  800  100  100
+
+# Room obstacles
+obstacle  175  280  150  2.0  0.00  13  1
+obstacle  175  750  120  2.5  1.00  13  1
+obstacle  425  250  160  2.3  0.50  13  0
+obstacle  425  800  180  1.8  2.00  13  0
+obstacle  650  400  120  2.8  1.50  13  1
+obstacle  650  800  100  2.2  3.00  13  0
+obstacle  850  350  200  2.0  0.80  13  1
+
+# Coins in tricky spots inside rooms
+coin  175  130  24
+coin  425  450  24
+coin  425  650  24
+coin  650  580  24
+coin  850  160  24
+coin  850  830  24
+coin  175  870  24

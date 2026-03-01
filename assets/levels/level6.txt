@@ -1,0 +1,33 @@
+# Level 6 — Crossroads
+# Plus-shaped open area created by four corner blocks.
+
+# Border
+wall  50   50   900  25
+wall  50   925  900  25
+wall  50   75    25  850
+wall  925  75    25  850
+
+# Four corner blocks (leaving 250px wide cross arms)
+wall   75   75  275  275     # top-left
+wall  650   75  275  275     # top-right
+wall   75  650  275  275     # bottom-left
+wall  650  650  275  275     # bottom-right
+
+# Zones
+start   80  430  100  120
+end    820  430  100  120
+
+# Arm obstacles
+obstacle  280  250  100  2.5  0.00  16  0
+obstacle  500  200  100  2.0  1.57  16  1
+obstacle  280  770  100  2.0  2.00  16  0
+obstacle  500  800  100  2.8  0.50  16  1
+obstacle  780  500  100  2.2  1.00  16  1
+
+# Coins at the end of each arm plus center
+coin  500  110  24
+coin  500  890  24
+coin  880  500  24
+coin  500  500  24
+coin  380  500  24
+coin  500  250  24

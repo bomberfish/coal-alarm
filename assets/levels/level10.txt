@@ -1,0 +1,43 @@
+# Level 10 — Final challenge
+# Winding path with fast obstacles everywhere. Good luck.
+# Corridors are ~150px wide (gaps 175px) for the 50px player.
+
+# Border
+wall  50   50   900  25
+wall  50   925  900  25
+wall  50   75    25  850
+wall  925  75    25  850
+
+# Winding walls — alternating top/bottom attached, 175px gaps
+wall  225  75   25  550      # wall A top (gap at bottom y=625-925)
+wall  400  375  25  550      # wall B bottom (gap at top y=75-375)
+wall  575  75   25  550      # wall C top (gap at bottom y=625-925)
+wall  750  375  25  550      # wall D bottom (gap at top y=75-375)
+
+# Zones
+start   80  150  100  100
+end    830  150  100  100
+
+# Fast obstacles in every corridor
+obstacle  140  720  160  3.0  0.00  12  1
+obstacle  140  280  100  2.5  2.00  12  0
+obstacle  312  250  120  3.2  0.50  12  1
+obstacle  312  780  120  2.8  1.50  12  0
+obstacle  490  720  160  2.6  1.00  12  1
+obstacle  490  280  120  3.5  3.00  12  0
+obstacle  665  250  120  3.0  2.50  12  1
+obstacle  665  780  120  2.9  0.80  12  0
+obstacle  840  720  160  3.4  1.80  12  1
+obstacle  840  280  100  2.7  3.80  12  0
+
+# Coins — one in each corridor, placed in the danger zones
+coin  140  860  24
+coin  312  140  24
+coin  490  860  24
+coin  665  140  24
+coin  840  860  24
+coin  140  200  24
+coin  490  200  24
+coin  840  200  24
+coin  312  720  24
+coin  665  720  24

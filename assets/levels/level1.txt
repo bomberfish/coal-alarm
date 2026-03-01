@@ -1,0 +1,38 @@
+# Level 1 — S-curve
+# Navigate down through wall A, then up through wall B.
+#
+# Commands:
+#   wall      x y w h
+#   start     x y w h
+#   end       x y w h
+#   obstacle  cx cy amplitude speed phase radius vertical(0=horizontal 1=vertical)
+#   coin      x y radius
+
+# --- Outer border ---
+wall  50   50   900  25    # top
+wall  50   925  900  25    # bottom
+wall  50   75    25  850   # left
+wall  925  75    25  850   # right
+
+# --- Inner dividers ---
+# Wall A: blocks top portion, gap of 180px at the bottom
+wall  380  75   25  580
+
+# Wall B: blocks bottom portion, gap of 180px at the top
+wall  595  345  25  580
+
+# --- Zones ---
+start   80  410  100  130
+end    820  410  100  130
+
+# --- Obstacles (vertical bouncers, one per corridor) ---
+obstacle  230  500  300  1.8   0.00  14  1
+obstacle  490  500  300  2.3   1.57  14  1
+obstacle  760  500  300  2.0   3.14  14  1
+
+# --- Coins ---
+coin  220  150  24
+coin  300  850  24
+coin  490  180  24
+coin  700  150  24
+coin  820  830  24

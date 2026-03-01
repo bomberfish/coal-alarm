@@ -1,0 +1,28 @@
+# Level 7 — The gauntlet
+# Wide horizontal corridor with many fast obstacles.
+
+# Border — corridor from y=250 to y=750 (500px tall, plenty for 50px player)
+wall  50   250  900  25
+wall  50   750  900  25
+wall  50   275   25 475
+wall  925  275   25 475
+
+# Zones
+start   80  440  100  120
+end    840  440  100  120
+
+# Dense vertical bouncers along the corridor
+obstacle  210  510  160  2.5  0.00  12  1
+#obstacle  300  510  160  3.0  0.80  12  1
+obstacle  390  510  160  2.2  1.60  12  1
+#obstacle  480  510  160  2.8  2.40  12  1
+obstacle  570  510  160  3.2  3.20  12  1
+#obstacle  660  510  160  2.4  4.00  12  1
+obstacle  750  510  160  2.9  4.80  12  1
+#obstacle  840  510  160  2.6  5.60  12  1
+
+# Coins weaving between obstacles
+coin  255  380  24
+coin  435  620  24
+coin  615  380  24
+coin  795  620  24
