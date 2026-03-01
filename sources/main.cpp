@@ -7,7 +7,7 @@
 
 #define SCREEN_WIDTH  1000
 #define SCREEN_HEIGHT 1000
-#define WINDOW_TITLE  "Coal Alarm"
+#define WINDOW_TITLE  "Coal Alarm!"
 
 #if defined(PLATFORM_DESKTOP)
     #define GLSL_VERSION            330
