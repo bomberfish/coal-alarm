@@ -263,6 +263,7 @@ int main(void) {
     Texture2D playerTex      = LoadTexture(ASSETS_PATH "player.png");
     Texture2D collectableTex  = LoadTexture(ASSETS_PATH "collectable.png");
     Texture2D powerupTex      = LoadTexture(ASSETS_PATH "powerup.png");
+    Texture2D obstacleTex      = LoadTexture(ASSETS_PATH "projectile.png");
 
     Music music      = LoadMusicStream(ASSETS_PATH "audio/2s.wav");
     Music slowMusic  = LoadMusicStream(ASSETS_PATH "audio/slow.wav");
@@ -449,7 +450,10 @@ int main(void) {
 
         for (int i = 0; i < (int)level.obstacles.size(); i++) {
             Vector2 obsPos = ObstaclePos(level.obstacles[i], elapsed);
-            DrawCircleV(obsPos, level.obstacles[i].radius, {220, 120, 60, 255});
+            // DrawCircleV(obsPos, level.obstacles[i].radius, {220, 120, 60, 255});
+            Rectangle src = { 0, 0, (float)obstacleTex.width, (float)obstacleTex.height };
+            Rectangle dst = { obsPos.x - level.obstacles[i].radius, obsPos.y - level.obstacles[i].radius, level.obstacles[i].radius * 2.0f, level.obstacles[i].radius * 2.0f };
+            DrawTexturePro(obstacleTex, src, dst, {0, 0}, 0.0f, WHITE);
         }
 
         {
