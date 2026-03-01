@@ -8,3 +8,4 @@ out/
 CMakeSettings.json
 webport/node_modules/
 .cache
+.DS_Store
